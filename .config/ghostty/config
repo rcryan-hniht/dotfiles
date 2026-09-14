@@ -6,10 +6,10 @@ font-size = 15
 font-family  = "~/dotfiles/.config/fonts/FiraCode"
 
 # Window Configuration
-window-decoration = auto
+window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 0.15
+background-opacity = 0.85
 window-inherit-working-directory = true
 
 # Cursor Configuration
@@ -17,7 +17,7 @@ cursor-style = block
 cursor-style-blink = true
 
 # Scrollback
-scrollback-limit = 3023
+scrollback-limit = 100000
 
 # Terminal features
 mouse-hide-while-typing = false
@@ -59,5 +59,5 @@ keybind = shift+enter=text:\n
 
 # Rando stuff
 gtk-single-instance = true
-
-theme = dark:sequoia-monochrome-dark,light:sequoia-monochrome-light
+theme = dark: GitHub Dark High Contrast,light: GitHub Light Colorblind
+# theme = dark:sequoia-monochrome-dark,light:sequoia-monochrome-light
