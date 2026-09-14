@@ -52,7 +52,7 @@ input {
     }
 
     trackpoint {
-        // off
+         off
         // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
@@ -78,6 +78,24 @@ input {
 // Remember to uncomment the node by removing "/-"!
 output "HDMI-A-1" {
      // ...settings for HDMI-A-1...
+     
+// off
+    mode "1920x1080@60.000"
+    scale 1.0
+    // transform "90"
+    position x=1280 y=0
+    variable-refresh-rate  on-demand=true
+    //focus-at-startup
+    backdrop-color "#001100"
+    // max-bpc 8
+
+    hot-corners {
+        // off
+        top-left
+        // top-right
+        // bottom-left
+        // bottom-right
+    }
 }
 output "eDP-3"{}
 /-output "eDP-1" {
@@ -326,25 +344,7 @@ window-rule {
 window-rule {
   match app-id=r#"^com.mitchellh.ghostty$"#
   open-maximized-to-edges true
-  opacity 0.55
-  background-effect {
-        xray true
-        blur true
-        noise 0.05
-        saturation 3
-    }
-
-    popups {
-        opacity 0.5
-        geometry-corner-radius 15
-
-        background-effect {
-            xray true
-            blur true
-            noise 0.05
-            saturation 3
-        }
-    }
+  opacity 0.85
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
@@ -392,8 +392,10 @@ binds {
     Mod+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    //Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Alt+Right hotkey-overlay-title="Switch wallpaper" {spawn-sh "dms ipc call wallpaper next";}
+    Mod+Alt+Left hotkey-overlay-title="Switch wallpaper" {spawn-sh "dms ipc call wallpaper prev";}
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
