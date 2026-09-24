@@ -4,7 +4,10 @@
 node_modules/
 
 # neovim
-.config/nvim/lazy-lock.json
+**/lazy-lock.json
+
+# zsh
+**/.zcompdump*
 
 # secrets
 .env

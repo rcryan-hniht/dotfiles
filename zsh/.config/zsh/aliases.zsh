@@ -8,9 +8,10 @@ alias remove="sudo apt remove --purge"
 alias restart="sudo reboot now"
 alias shutdown="sudo shutdown now"
 alias python="python3"
-alias ..="cd .."
+alias ..="z .."
 alias lsd="tree -d"
 alias timer="sigye"
+
 # Better ls
 alias ls='eza --icons'
 

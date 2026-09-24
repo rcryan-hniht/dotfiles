@@ -8,6 +8,8 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_FIND_NO_DUPS
 setopt NUMERIC_GLOB_SORT
+
+#fastfetch
 fastfetch
 
 # opencode
@@ -41,3 +43,11 @@ source "$ZDOTDIR/aliases.zsh"
 source "$ZDOTDIR/bindings.zsh"
 source "$ZDOTDIR/plugins.zsh"
 source "$ZDOTDIR/prompt.zsh"
+
+# Ghostty shell integration (OSC 7 working directory reporting for inherit-working-directory)
+if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+    source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
+fi
+
+
+export PATH=$PATH:/home/killua/.spicetify

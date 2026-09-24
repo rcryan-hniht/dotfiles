@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "configurations": [
+    {
+      "id": "profile_1786517912584_k8eeupl",
+      "name": "tv",
+      "outputs": {
+        "eDP-1": {
+          "mode": "1920x1080@60.001",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "scale": 1,
+          "transform": "Normal",
+          "vrr": false,
+          "disabled": false,
+          "niri": {}
+        }
+      }
+    },
+    {
+      "id": "profile_1786517927451_vtrohcm",
+      "name": "tv",
+      "outputs": {
+        "eDP-1": {
+          "mode": "1920x1080@60.001",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "scale": 1,
+          "transform": "Normal",
+          "vrr": false,
+          "disabled": false,
+          "niri": {}
+        }
+      }
+    }
+  ]
+}

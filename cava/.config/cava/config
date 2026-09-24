@@ -5,7 +5,7 @@
 [general]
 
 # Auto reload config if the configuration file has changed. 1 = on, 0 = off.
-; live-config = 0
+ live-config = 1
 
 # Smoothing mode. Can be 'normal', 'scientific' or 'waves'. DEPRECATED as of 0.6.0
 ; mode = normal
@@ -246,7 +246,7 @@
 # a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # default is to keep current terminal color
 ; background = default
-; foreground = default
+ foreground = default
 
 # SDL and sdl_glsl only support hex code colors, these are the default:
 ; background = '#111111'
@@ -256,16 +256,46 @@
 # Gradient mode, only hex defined colors are supported,
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
-; gradient = 0
-; gradient_color_1 = '#59cc33'
-; gradient_color_2 = '#80cc33'
-; gradient_color_3 = '#a6cc33'
-; gradient_color_4 = '#cccc33'
-; gradient_color_5 = '#cca633'
-; gradient_color_6 = '#cc8033'
-; gradient_color_7 = '#cc5933'
-; gradient_color_8 = '#cc3333'
+ gradient = 1
+# Purple obsidian
+#gradient_color_1 = '#6a11cb'
+#gradient_color_2 = '#7f17bd'
+#gradient_color_3 = '#941eaf'
+#gradient_color_4 = '#a925a2'
+#gradient_color_5 = '#bf2c94'
+#gradient_color_6 = '#d43387'
+#gradient_color_7 = '#e93a79'
+#gradient_color_8 = '#ff416c'
 
+# Cyber punk
+#gradient_color_1 = '#00f2fe'
+#gradient_color_2 = '#2cc4f5'
+#gradient_color_3 = '#5896ec'
+#gradient_color_4 = '#8468e4'
+#gradient_color_5 = '#a945d2'
+#gradient_color_6 = '#c52eb6'
+#gradient_color_7 = '#e2179a'
+#gradient_color_8 = '#ff007f'
+
+# Midnight blue + deep velvet
+#gradient_color_1 = '#0f2027'
+#gradient_color_2 = '#2a1664'
+#gradient_color_3 = '#460da2'
+#gradient_color_4 = '#6204e0'
+#gradient_color_5 = '#830cf2'
+#gradient_color_6 = '#aa25d8'
+#gradient_color_7 = '#d13ebf'
+#gradient_color_8 = '#f857a6'
+
+# Lavender
+gradient_color_1 = '#d8b5ff'
+gradient_color_2 = '#dcb9f7'
+gradient_color_3 = '#e1bef0'
+gradient_color_4 = '#e5c2e8'
+gradient_color_5 = '#ebc2de'
+gradient_color_6 = '#f1bed0'
+gradient_color_7 = '#f8b9c2'
+gradient_color_8 = '#ffb5b5'
 
 # Horizontal is only supported on noncurses output.
 # Only one color will be calculated per bar.
