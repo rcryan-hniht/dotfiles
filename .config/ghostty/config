@@ -17,7 +17,7 @@ cursor-style = block
 cursor-style-blink = true
 
 # Scrollback
-scrollback-limit = 100000
+scrollback-limit = 100000000
 
 # Terminal features
 mouse-hide-while-typing = false
@@ -59,5 +59,7 @@ keybind = shift+enter=text:\n
 
 # Rando stuff
 gtk-single-instance = true
-theme = dark: GitHub Dark High Contrast,light: GitHub Light Colorblind
+theme  = dark: Builtin Dark, light: Builtin Light
+theme  = dark: Builtin Tango Dark, light: Builtin Tango Light
+#theme = dark: GitHub Dark High Contrast,light: GitHub Light Colorblind
 # theme = dark:sequoia-monochrome-dark,light:sequoia-monochrome-light
