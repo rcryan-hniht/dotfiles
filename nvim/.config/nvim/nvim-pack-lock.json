@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "live-server.nvim": {
+      "rev": "f1a2defb7bc3bfc37bcb455fafdf6d61113d71c8",
+      "src": "https://git.barrettruth.com/barrettruth/live-server.nvim"
+    }
+  }
+}
