@@ -9,7 +9,7 @@ font-family  = "~/dotfiles/.config/fonts/FiraCode"
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 0.85
+background-opacity = 0.75
 window-inherit-working-directory = true
 
 # Cursor Configuration
