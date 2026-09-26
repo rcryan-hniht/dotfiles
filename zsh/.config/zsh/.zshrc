@@ -10,7 +10,6 @@ setopt HIST_FIND_NO_DUPS
 setopt NUMERIC_GLOB_SORT
 
 #fastfetch
-fastfetch
 
 # opencode
 export PATH="/home/killua/.opencode/bin:$PATH"
