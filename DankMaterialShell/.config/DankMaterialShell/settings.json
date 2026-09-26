@@ -1,7 +1,7 @@
 {
-  "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
-  "customThemeFile": "/home/killua/.config/DankMaterialShell/themes/amoledBlack/theme.json",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
+  "customThemeFile": "/home/killua/.config/DankMaterialShell/themes/modus/theme.json",
   "registryThemeVariants": {
     "catppuccin": {
       "dark": {
@@ -23,15 +23,27 @@
       "dark": {
         "flavor": "vivendi",
         "accent": "purple"
+      },
+      "light": {
+        "flavor": "operandi",
+        "accent": "purple"
+      }
+    },
+    "astralJourney": {
+      "light": {
+        "flavor": "supernova",
+        "accent": "coral"
       }
     }
   },
-  "matugenScheme": "scheme-rainbow",
+  "matugenScheme": "scheme-monochrome",
+  "matugenSourceMode": "lightness",
   "popupTransparency": 0.76,
   "dockTransparency": 0.77,
   "widgetColorMode": "colorful",
   "cornerRadius": 32,
   "niriLayoutRadiusOverride": 0,
+  "touchpadScrollFactor": 1.1,
   "windSpeedUnit": "ms",
   "animationSpeed": 2,
   "syncComponentAnimationSpeeds": false,
@@ -233,14 +245,14 @@
         }
       ],
       "spacing": 5,
-      "innerPadding": 15,
+      "innerPadding": 4,
       "bottomGap": 0,
       "transparency": 0,
       "widgetTransparency": 1,
       "squareCorners": false,
       "noBackground": false,
       "maximizeWidgetIcons": false,
-      "maximizeWidgetText": false,
+      "maximizeWidgetText": true,
       "removeWidgetPadding": true,
       "widgetPadding": 2,
       "gothCornersEnabled": true,
@@ -255,7 +267,7 @@
       "widgetOutlineOpacity": 1,
       "widgetOutlineThickness": 1,
       "fontScale": 1,
-      "iconScale": 1.2,
+      "iconScale": 1.38,
       "autoHide": false,
       "autoHideDelay": 250,
       "showOnWindowsOpen": true,
@@ -320,7 +332,8 @@
           "id": "status",
           "enabled": true
         }
-      ]
+      ],
+      "islandFloating": false
     }
   ],
   "desktopClockCustomColor": {
@@ -408,7 +421,7 @@
       "trigger": "cb"
     }
   },
-  "barInsetPaddingShared": 12,
+  "barInsetPaddingShared": 4,
   "barInsetPaddingSyncAll": true,
   "configVersion": 18
 }
