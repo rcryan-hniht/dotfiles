@@ -1,12 +1,32 @@
 local wezterm = require("wezterm")
-
+-- local sessionizer = require("lua.sessionizer")
 local config = wezterm.config_builder()
 
-config.initial_cols = 120
-config.initial_rows = 28
+-- appearance
+config.font_size = 15
+config.color_scheme = require("colorscheme")
 
-config.font = "Jetbrains Mono"
-config.font_size = 10
-config.colorscheme = "Black Metal"
+config.window_background_opacity = 0.5
+config.wayland_window_background_blur = true
+config.colors = { background = "#000000" }
+config.window_padding = {
+	left = 18,
+	right = 15,
+	top = 20,
+	bottom = 5,
+}
+
+config.max_fps = 120
+config.animation_fps = 120
+config.front_end = "WebGpu"
+config.prefer_egl = true
+
+config.enable_tab_bar = false
+config.window_decorations = "RESIZE"
+config.window_close_confirmation = "NeverPrompt"
+config.automatically_reload_config = true
+config.audible_bell = "Disabled"
+config.adjust_window_size_when_changing_font_size = false
+config.harfbuzz_features = { "calt=0" }
 
 return config
